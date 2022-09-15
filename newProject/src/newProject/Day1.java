@@ -15,6 +15,7 @@ public class Day1 {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\pkadam8\\eclipse-workspace_new\\newProject\\Browser\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/newtours/");
+		//maximize the window
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a")).click();
